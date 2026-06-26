@@ -22,5 +22,70 @@
     "croquis": [
       "https://image.thecrag.com/1280x960/56/7e/567ec0e0b3711df676f59bf0ef421b8890c262bb"
     ]
+  },
+    {
+    "nombre": "Solavilla",
+    "nombre_extendido": "Solavilla",
+    "latitud": 43.2857378,
+    "longitud": -5.8776589,
+    "orientacion": "S",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": [
+      "https://s1.wklcdn.com/image_137/4121599/262042878/153110260Master.jpg"
+    ]
+  },
+   {
+    "nombre": "LaPuente",
+    "nombre_extendido": "La Puente",
+    "latitud": 43.2573109,
+    "longitud": -5.8738979,
+    "orientacion": "E",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO5tCmyqKTDMLs7lfHpL60oZ_mw353Tjv6VStxYCbIgiEqZcr1biv286ysjiYrgZY8sToX9oyra5wd49rgcxp5oxQ68tSo8Myb-PGWFyJb8FYPTfXYbYtmuwGc0OJkTN6DV2Ifd9Jbt02i/s1600/IMG_20190515_220912.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnUdF2k1hZxULWEC9dptvxD19vz6tDoN4u2CR7C1v2Kwd9eT9RuqIEzamqFg1SBklab2_UWtqvpf_v7-aZb9gipO6SKmmejJsO-_aQh6F6LA8_ZKhyTCZymu6W0n6RCxRKhzd9FfQCcUBU/s1600/IMG_20190515_221150.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4ayCpG9zugAyfAO1EsnaBiVQwdNAnPxjQ1shoY9408kqfzslXW9DZQrkV8lPM3XseWiaSqo4yf2YxNr0fmIH7s0kGNDwPFAXPNy-VEghvd_sEOpoCvESkux9vKo0Y9P441dl1fv0Aio0n/s1600/IMG_20190515_222556.jpg"
+    ]
+  },
+  {
+    "nombre": "Carba",
+    "nombre_extendido": "La Carba",
+    "latitud": 43.2503199,
+    "longitud": -5.8665016,
+    "orientacion": "SW",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": ["https://image.thecrag.com/1600x900/f6/5b/f65b71d31eb6b0b3d303cf04f6ae1337f94a42dd"
+      
+    ]
+  },
+  {
+    "nombre": "Argayu",
+    "nombre_extendido": "Argayu",
+    "latitud": 43.2504138,
+    "longitud": -5.8641409,
+    "orientacion": "SW",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": [""
+      
+    ]
+  },
+  {
+    "nombre": "Utiru",
+    "nombre_extendido": "L'Utiru",
+    "latitud": 43.2507981,
+    "longitud": -5.8657103,
+    "orientacion": "S",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmN1NegorS1G4AazC-Ahwaytcb_G8JWiQXqxa7o7BVnqRvISwvkq0oPlS9RaoZRRtM6HoO6jvneP0AIYnsqUKAVtiY4az42e73qOwqlg9MK3zCshywYYl4D6Y-fbAckHudDLlg0HBi6_MzozaLA6u5R__HsFWNMM8fTBSJ0Irei_0W-qWhOWCFHp8Z2JA/s1111/lutiru.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg90Db_KWwhCUfKvShJAsrRmHQBT9uN4kBWuhgsNtd7yetY4kWv46BIpr34qoP2d4QxYG3uzkcrSsgkV9hJvRCX5szj0y8d-ZyWIuLzlfOQKB7l2GMnJLxs3xdjotCteSN_Qklt15O7oKA2wOekKhoYdUMKF50NTIhWhPPKYwkJlBQ4iBSeB2IKwE3c-I/s1600/Teo.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-t2x-Stc2Uk-na-zNH43WlrCvx6GCOBeB4zzLpTLMbvaRz9ZSkdXOz3E4_XEqM3bGwCniI-TYZuNZqtkN8wDXb3jwKlEamLLIqNCbIjKuJVxwoIOOO0UG-CM-leT2kZ3TrEdeBBf7F37NyZZpVEMXY7Mc61RZqTqvMef8jnwgsV_0V_sj5xW8oe_kork/s1600/Pa%C3%B1o%C3%B1o.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPImtzJvDKAj38Dt8C5uxbJxkcdDdgikhGgBuLhgJCFK3EDjfeSpAQrgu9wUsd80F4GIZWESycD3UZYAf4CzFnzF-PfyUHWBGdK-OFrFIjS-d_xGxT1oHwf1QJpqJSU73w8HtVtLBWDAWUSO2GggCRfZAVDMSrnsarmzIaI-xh5kprA0mFo_uM9RgBgVY/s1600/Po%C3%B1ono%20derecha.jpg"
+      
+    ]
   }
+
+  
+  
+
+  
 ]
