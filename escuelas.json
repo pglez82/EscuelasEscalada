@@ -10,5 +10,17 @@
     "croquis": [
       "https://rocaverdeclimbing.com/wp-content/uploads/2025/11/Laboratorio-722x1024.jpg"
     ]
+  },
+  {
+    "nombre": "Frechura",
+    "nombre_extendido": "Frechura",
+    "latitud": 43.270836,
+    "longitud": -5.8690621,
+    "orientacion": "W",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin-laboratorio/routes",
+    "descripcion": "Paredón",
+    "croquis": [
+      "https://image.thecrag.com/1280x960/56/7e/567ec0e0b3711df676f59bf0ef421b8890c262bb"
+    ]
   }
 ]
