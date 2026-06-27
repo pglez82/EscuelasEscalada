@@ -14,8 +14,8 @@
   {
     "nombre": "Frechura",
     "nombre_extendido": "Frechura",
-    "latitud": 43.270836,
-    "longitud": -5.8690621,
+    "latitud": 43.271018,
+    "longitud": -5.841705,
     "orientacion": "W",
     "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin-laboratorio/routes",
     "descripcion": "Paredón",
@@ -133,5 +133,15 @@
     "enlace_8a": "",
     "descripcion": "",
     "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWLQF99bVMZbo4NlMRAe4jz4mbJwyR0ZMBdd-S5eYoctU_ynFlzT9R6n0w2Nr7SP6Van-NpbU5BwpssmIjieTxj10wEw-CKsTTEJcDK_cwwl6vmtal2QCJ0VPblRc8uER2DWdViM5mxXLjRtwB9t37yF15MK3tLwvJDUokul2_K3eCHq6zEEReP12s/s1080/Monsacro.jpg"]
+  },
+  {
+    "nombre": "Entrepicos",
+    "nombre_extendido": "Entrepicos",
+    "latitud": 43.2555077,
+    "longitud": -5.9004684,
+    "orientacion": "S",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin-monsacro/routes?sector=entrepicos-alimoches",
+    "descripcion": "Sector pequeño con alguna via de desplome bonita. Está como en una cueva así que no es S puro.",
+    "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtpBg5mld-X0MxDDdhe00ZKjnt-1aa3HmfojsNRjRu3RXJOaMsQu7Cx-QMlKu0qtdrik-RBNN1EzT7DNEmKWar-uZLc3SEigF7FZ_8zOqA5yUCWX_g-Wfd1Wis4ug-9y-4ShnhInZpH9OxwmYaruEQp6mPoFaZGLZmT9C2GMb9GLSqXQuerujXogGY/s1704/350106456_505376188384009_9204083627581103841_n.jpg"]
   }
 ]
