@@ -98,10 +98,33 @@
     "nombre": "Otura",
     "nombre_extendido": "Otura",
     "latitud": 43.2570988,
-    "longitud": -5.8857309,
+    "longitud": -5.882636,
     "orientacion": "S",
     "enlace_8a": "",
     "descripcion": "",
     "croquis": [""]
+  },
+  {
+    "nombre": "Callejon",
+    "nombre_extendido": "Callejón",
+    "latitud": 43.2571851,
+    "longitud": -5.883976,
+    "orientacion": "E",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": [""]
+  },
+  {
+    "nombre": "LaCanal",
+    "nombre_extendido": "La Canal",
+    "latitud": 43.2584211,
+    "longitud": -5.88099,
+    "orientacion": "S",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/otura/routes?sector=la-canal",
+    "descripcion": "",
+    "croquis": ["image.png"]
   }
+
+  
+  
 ]
