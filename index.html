@@ -14,15 +14,33 @@
   <div id="map"></div>
 
   <!-- Sidebar (se oculta al abrir detalle en móvil) -->
-  <button id="sidebar-toggle" class="sidebar-toggle" title="Mostrar escuelas">☰ Escuelas</button>
   <div id="sidebar" class="sidebar open">
     <div class="sidebar-header">
       <h1>🧗 Escuelas de Escalada</h1>
+      <button id="sidebar-close" class="sidebar-close" title="Ocultar escuelas">✕</button>
+    </div>
+    <div class="filter-bar" id="filter-bar">
+      <button id="filter-toggle" class="filter-toggle" title="Ocultar filtro">▼</button>
+      <label for="orientation-filter">Orientación:</label>
+      <select id="orientation-filter">
+        <option value="">Todas</option>
+        <option value="N">N</option>
+        <option value="NE">NE</option>
+        <option value="E">E</option>
+        <option value="SE">SE</option>
+        <option value="S">S</option>
+        <option value="SW">SW</option>
+        <option value="W">W</option>
+        <option value="NW">NW</option>
+      </select>
     </div>
     <div id="school-list" class="school-list">
       <div class="loading">Cargando...</div>
     </div>
   </div>
+
+  <!-- Botón para mostrar sidebar -->
+  <button id="sidebar-toggle" class="sidebar-toggle" title="Mostrar escuelas">☰ Escuelas</button>
 
   <!-- Panel de detalles (bottom sheet) -->
   <div id="detail-panel" class="detail-panel">
@@ -33,6 +51,6 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="js/app.js?v=1"></script>
+  <script src="js/app.js?v=6"></script>
 </body>
 </html>

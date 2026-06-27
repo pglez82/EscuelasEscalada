@@ -1,5 +1,6 @@
 // --- Estado ---
 let schools = [];
+let filteredSchools = [];
 let markers = [];
 let map = null;
 let detailPanel = null;
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // Toggle sidebar
+  // Toggle sidebar (show from left)
   const toggle = document.getElementById('sidebar-toggle');
   if (toggle) {
     function updateToggleVisibility() {
@@ -34,10 +35,42 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  // Close sidebar (hide to see map fullscreen)
+  const sidebarClose = document.getElementById('sidebar-close');
+  if (sidebarClose) {
+    sidebarClose.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+    });
+  }
+
   try {
     await loadSchools();
     renderSidebar();
     renderMap();
+
+    // Filter toggle (show/hide)
+    const filterToggle = document.getElementById('filter-toggle');
+    const filterBar = document.getElementById('filter-bar');
+    if (filterToggle && filterBar) {
+      filterToggle.addEventListener('click', () => {
+        const isHidden = filterBar.classList.toggle('hidden');
+        filterToggle.textContent = isHidden ? '▲' : '▼';
+        filterToggle.title = isHidden ? 'Mostrar filtro' : 'Ocultar filtro';
+      });
+    }
+
+    // Orientation filter
+    const filterSelect = document.getElementById('orientation-filter');
+    if (filterSelect) {
+      filterSelect.addEventListener('change', () => {
+        const value = filterSelect.value;
+        filteredSchools = value
+          ? schools.filter(s => s.orientacion === value)
+          : schools;
+        renderSidebar();
+        updateMarkers();
+      });
+    }
   } catch (err) {
     showError(err.message);
   }
@@ -63,7 +96,7 @@ function renderMap() {
 
   L.control.zoom({ position: 'topright' }).addTo(map);
 
-  schools.forEach((s, i) => {
+  schools.forEach((s) => {
     const markerName = s.nombre_extendido || s.nombre;
     const icon = L.divIcon({
       className: 'custom-marker-wrapper',
@@ -73,7 +106,7 @@ function renderMap() {
     });
     const marker = L.marker([s.latitud, s.longitud], { icon });
     marker.addTo(map);
-    marker.on('click', () => openDetail(i));
+    marker.on('click', () => openDetail(schools.indexOf(s)));
     markers.push(marker);
   });
 
@@ -89,12 +122,12 @@ function renderSidebar() {
   const list = document.getElementById('school-list');
   list.innerHTML = '';
 
-  if (schools.length === 0) {
-    list.innerHTML = '<div class="loading">No hay escuelas cargadas</div>';
+  if (filteredSchools.length === 0) {
+    list.innerHTML = '<div class="loading">No hay escuelas que coincidan</div>';
     return;
   }
 
-  schools.forEach((s, i) => {
+  filteredSchools.forEach((s, i) => {
     const item = document.createElement('div');
     item.className = 'school-item';
     item.innerHTML = `
@@ -102,7 +135,8 @@ function renderSidebar() {
       ${s.orientacion ? `<div class="orientacion">Orientación: ${s.orientacion}</div>` : ''}
     `;
     item.addEventListener('click', () => {
-      openDetail(i);
+      const originalIndex = schools.indexOf(s);
+      openDetail(originalIndex);
       sidebar.classList.remove('open');
     });
     list.appendChild(item);
@@ -159,6 +193,31 @@ function openDetail(index) {
 
 function closeDetail() {
   detailPanel.classList.remove('open');
+}
+
+// --- Actualizar visibilidad de marcadores ---
+function updateMarkers() {
+  markers.forEach((marker, i) => {
+    const school = schools[i];
+    const show = filteredSchools.includes(school);
+    if (show) {
+      marker.addTo(map);
+    } else {
+      map.removeLayer(marker);
+    }
+  });
+
+  // Ajustar vista del mapa a los marcadores visibles
+  const visibleMarkers = [];
+  markers.forEach((marker, i) => {
+    if (filteredSchools.includes(schools[i])) {
+      visibleMarkers.push(marker);
+    }
+  });
+  if (visibleMarkers.length > 0) {
+    const group = L.featureGroup(visibleMarkers);
+    map.fitBounds(group.getBounds().pad(0.1));
+  }
 }
 
 function infoRow(label, value) {

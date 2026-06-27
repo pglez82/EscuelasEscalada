@@ -82,10 +82,28 @@
     "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmN1NegorS1G4AazC-Ahwaytcb_G8JWiQXqxa7o7BVnqRvISwvkq0oPlS9RaoZRRtM6HoO6jvneP0AIYnsqUKAVtiY4az42e73qOwqlg9MK3zCshywYYl4D6Y-fbAckHudDLlg0HBi6_MzozaLA6u5R__HsFWNMM8fTBSJ0Irei_0W-qWhOWCFHp8Z2JA/s1111/lutiru.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg90Db_KWwhCUfKvShJAsrRmHQBT9uN4kBWuhgsNtd7yetY4kWv46BIpr34qoP2d4QxYG3uzkcrSsgkV9hJvRCX5szj0y8d-ZyWIuLzlfOQKB7l2GMnJLxs3xdjotCteSN_Qklt15O7oKA2wOekKhoYdUMKF50NTIhWhPPKYwkJlBQ4iBSeB2IKwE3c-I/s1600/Teo.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-t2x-Stc2Uk-na-zNH43WlrCvx6GCOBeB4zzLpTLMbvaRz9ZSkdXOz3E4_XEqM3bGwCniI-TYZuNZqtkN8wDXb3jwKlEamLLIqNCbIjKuJVxwoIOOO0UG-CM-leT2kZ3TrEdeBBf7F37NyZZpVEMXY7Mc61RZqTqvMef8jnwgsV_0V_sj5xW8oe_kork/s1600/Pa%C3%B1o%C3%B1o.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPImtzJvDKAj38Dt8C5uxbJxkcdDdgikhGgBuLhgJCFK3EDjfeSpAQrgu9wUsd80F4GIZWESycD3UZYAf4CzFnzF-PfyUHWBGdK-OFrFIjS-d_xGxT1oHwf1QJpqJSU73w8HtVtLBWDAWUSO2GggCRfZAVDMSrnsarmzIaI-xh5kprA0mFo_uM9RgBgVY/s1600/Po%C3%B1ono%20derecha.jpg"
       
     ]
+  },
+    {
+    "nombre": "Covariella",
+    "nombre_extendido": "Covariella",
+    "latitud": 43.2507981,
+    "longitud": -5.8657103,
+    "orientacion": "S",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmN1NegorS1G4AazC-Ahwaytcb_G8JWiQXqxa7o7BVnqRvISwvkq0oPlS9RaoZRRtM6HoO6jvneP0AIYnsqUKAVtiY4az42e73qOwqlg9MK3zCshywYYl4D6Y-fbAckHudDLlg0HBi6_MzozaLA6u5R__HsFWNMM8fTBSJ0Irei_0W-qWhOWCFHp8Z2JA/s1111/lutiru.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg90Db_KWwhCUfKvShJAsrRmHQBT9uN4kBWuhgsNtd7yetY4kWv46BIpr34qoP2d4QxYG3uzkcrSsgkV9hJvRCX5szj0y8d-ZyWIuLzlfOQKB7l2GMnJLxs3xdjotCteSN_Qklt15O7oKA2wOekKhoYdUMKF50NTIhWhPPKYwkJlBQ4iBSeB2IKwE3c-I/s1600/Teo.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-t2x-Stc2Uk-na-zNH43WlrCvx6GCOBeB4zzLpTLMbvaRz9ZSkdXOz3E4_XEqM3bGwCniI-TYZuNZqtkN8wDXb3jwKlEamLLIqNCbIjKuJVxwoIOOO0UG-CM-leT2kZ3TrEdeBBf7F37NyZZpVEMXY7Mc61RZqTqvMef8jnwgsV_0V_sj5xW8oe_kork/s1600/Pa%C3%B1o%C3%B1o.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPImtzJvDKAj38Dt8C5uxbJxkcdDdgikhGgBuLhgJCFK3EDjfeSpAQrgu9wUsd80F4GIZWESycD3UZYAf4CzFnzF-PfyUHWBGdK-OFrFIjS-d_xGxT1oHwf1QJpqJSU73w8HtVtLBWDAWUSO2GggCRfZAVDMSrnsarmzIaI-xh5kprA0mFo_uM9RgBgVY/s1600/Po%C3%B1ono%20derecha.jpg"
+      
+    ]
+
+  },
+  {
+    "nombre": "Otura",
+    "nombre_extendido": "Otura",
+    "latitud": 43.2570988,
+    "longitud": -5.8857309,
+    "orientacion": "S",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": [""]
   }
-
-  
-  
-
-  
 ]
