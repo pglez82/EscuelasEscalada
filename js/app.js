@@ -186,6 +186,15 @@ function openDetail(index) {
   if (s.orientacion) {
     html += infoRow('Orientación', s.orientacion);
   }
+
+  // Sun hours chart
+  if (s.orientacion) {
+    const currentMonth = new Date().getMonth() + 1; // 1-12
+    const sunInfo = horasSol(currentMonth, s.orientacion);
+    if (sunInfo.horas !== null) {
+      html += sunHoursPieHTML(s.orientacion, sunInfo);
+    }
+  }
   if (s.enlace_8a) {
     html += infoRow('8a.nu', `<a href="${s.enlace_8a}" target="_blank" rel="noopener">${s.enlace_8a}</a>`);
   }
@@ -319,4 +328,118 @@ function openLightbox(src) {
 function showError(msg) {
   document.getElementById('map').innerHTML =
     `<div class="error-msg"><h3>Error</h3><p>${msg}</p></div>`;
+}
+
+// --- Sun hours pie chart ---
+const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+
+function sunHoursPieHTML(orientacion, sunInfo) {
+  const horas = sunInfo.horas;
+  let html = `
+    <div class="sun-hours-section">
+      <h3>☀️ Horas de sol</h3>
+      <div class="sun-pie-container">
+        <canvas id="sun-pie-canvas" width="140" height="140"></canvas>
+      </div>
+      <div class="sun-time-range" id="sun-time-range"></div>
+    </div>`;
+
+  setTimeout(() => drawSunPie(orientacion, sunInfo), 50);
+  return html;
+}
+
+function drawSunPie(orientacion, sunInfo) {
+  const canvas = document.getElementById('sun-pie-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width;
+  const H = canvas.height;
+  const cx = W / 2;
+  const cy = H / 2;
+  const radius = 60;
+
+  const inicio = sunInfo.inicio;
+  const fin = sunInfo.fin;
+
+  // Draw 24h clock face: 12h on top, 0h on bottom
+  ctx.beginPath();
+  ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
+  ctx.fillStyle = '#eee';
+  ctx.fill();
+  ctx.strokeStyle = '#ccc';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  // Sun arc: from inicio to fin (hours 0-24 mapped to angles)
+  // 12h = top (-PI/2), clockwise
+  const startAngle = -Math.PI / 2 + ((inicio - 12) / 24) * 2 * Math.PI;
+  const endAngle = -Math.PI / 2 + ((fin - 12) / 24) * 2 * Math.PI;
+
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.arc(cx, cy, radius, startAngle, endAngle);
+  ctx.closePath();
+  ctx.fillStyle = '#f4a623';
+  ctx.fill();
+
+  // Hour tick marks
+  for (let h = 0; h < 24; h++) {
+    const angle = -Math.PI / 2 + ((h - 12) / 24) * 2 * Math.PI;
+    const isMain = h % 3 === 0;
+    const innerR = isMain ? radius - 8 : radius - 4;
+
+    ctx.beginPath();
+    ctx.moveTo(cx + Math.cos(angle) * innerR, cy + Math.sin(angle) * innerR);
+    ctx.lineTo(cx + Math.cos(angle) * radius, cy + Math.sin(angle) * radius);
+    ctx.strokeStyle = isMain ? '#555' : '#bbb';
+    ctx.lineWidth = isMain ? 2 : 1;
+    ctx.stroke();
+  }
+
+  // Hour labels (0, 6, 12, 18)
+  const labelHours = [0, 6, 12, 18];
+  ctx.font = '9px -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+
+  labelHours.forEach(h => {
+    const angle = -Math.PI / 2 + ((h - 12) / 24) * 2 * Math.PI;
+    const labelR = radius - 14;
+    const lx = cx + Math.cos(angle) * labelR;
+    const ly = cy + Math.sin(angle) * labelR;
+    ctx.fillStyle = '#555';
+    ctx.fillText(h.toString(), lx, ly);
+  });
+
+  // Sun start / end labels on the arc
+  const labelR = radius - 24;
+  ctx.font = 'bold 10px -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+
+  const startH = Math.round(inicio);
+  const endH = Math.round(fin);
+
+  // Show start label on the left side of arc
+  const leftLabelAngle = startAngle + 0.15;
+  const sx = cx + Math.cos(leftLabelAngle) * labelR;
+  const sy = cy + Math.sin(leftLabelAngle) * labelR;
+  ctx.fillStyle = '#fff';
+  ctx.fillText(`${startH}:00`, sx, sy);
+
+  // Show end label on the right side of arc
+  const rightLabelAngle = endAngle - 0.15;
+  const ex = cx + Math.cos(rightLabelAngle) * labelR;
+  const ey = cy + Math.sin(rightLabelAngle) * labelR;
+  ctx.fillText(`${endH}:00`, ex, ey);
+
+  // Time range text below
+  const info = document.getElementById('sun-time-range');
+  if (info) {
+    const currentMonth = new Date().getMonth() + 1;
+    const r = horasSol(currentMonth, orientacion);
+    const startStr = Math.round(r.inicio).toString().padStart(2, '0') + ':00';
+    const endStr = Math.round(r.fin).toString().padStart(2, '0') + ':00';
+    info.textContent = `${startStr} – ${endStr} (${r.horas.toFixed(1)} h)`;
+  }
 }
