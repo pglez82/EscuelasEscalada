@@ -14,13 +14,13 @@
   <div id="map"></div>
 
   <!-- Sidebar (se oculta al abrir detalle en móvil) -->
-  <div id="sidebar" class="sidebar open">
+  <div id="sidebar" class="sidebar">
     <div class="sidebar-header">
       <h1>🧗 Escuelas de Escalada</h1>
       <button id="sidebar-close" class="sidebar-close" title="Ocultar escuelas">✕</button>
     </div>
-    <div class="filter-bar" id="filter-bar">
-      <button id="filter-toggle" class="filter-toggle" title="Ocultar filtro">▼</button>
+    <button id="filter-toggle" class="filter-toggle" title="Mostrar filtro">▼</button>
+    <div class="filter-bar hidden" id="filter-bar">
       <span class="filter-label">Orientación:</span>
       <div class="orientation-checks" id="orientation-filters">
         <label><input type="checkbox" value="N"> N</label>
@@ -50,6 +50,6 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="js/app.js?v=7"></script>
+  <script src="js/app.js?v=8"></script>
 </body>
 </html>
