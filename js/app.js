@@ -95,9 +95,30 @@ function renderMap() {
     zoomControl: false
   }).setView([40.0, -3.5], 6);
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; OpenStreetMap'
+  // Capas de mapa disponibles
+  const tileLayers = {
+    satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 19,
+      attribution: '&copy; Esri'
+    }),
+    topo: L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
+      maxZoom: 17,
+      attribution: '&copy; OpenTopoMap'
+    }),
+    street: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+    })
+  };
+
+  // Satélite por defecto
+  tileLayers.satellite.addTo(map);
+
+  // Selector de capas
+  L.control.layers(tileLayers, null, {
+    position: 'topright',
+    title: 'Mapa',
+    collapsed: false
   }).addTo(map);
 
   L.control.zoom({ position: 'topright' }).addTo(map);

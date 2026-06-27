@@ -38,8 +38,8 @@
    {
     "nombre": "LaPuente",
     "nombre_extendido": "La Puente",
-    "latitud": 43.2573109,
-    "longitud": -5.8738979,
+    "latitud": 43.2572078, 
+    "longitud": -5.8711839,
     "orientacion": "E",
     "enlace_8a": "",
     "descripcion": "",
@@ -50,8 +50,8 @@
   {
     "nombre": "Carba",
     "nombre_extendido": "La Carba",
-    "latitud": 43.2503199,
-    "longitud": -5.8665016,
+    "latitud": 43.2510317,
+    "longitud": -5.8635552,
     "orientacion": "SW",
     "enlace_8a": "",
     "descripcion": "",
@@ -62,8 +62,8 @@
   {
     "nombre": "Argayu",
     "nombre_extendido": "Argayu",
-    "latitud": 43.2504138,
-    "longitud": -5.8641409,
+    "latitud": 43.2503819,
+    "longitud": -5.8594081,
     "orientacion": "SW",
     "enlace_8a": "",
     "descripcion": "",
@@ -74,8 +74,8 @@
   {
     "nombre": "Utiru",
     "nombre_extendido": "L'Utiru",
-    "latitud": 43.2507981,
-    "longitud": -5.8657103,
+    "latitud": 43.2506933,
+    "longitud": -5.8616552,
     "orientacion": "S",
     "enlace_8a": "",
     "descripcion": "",
@@ -97,8 +97,8 @@
   {
     "nombre": "Otura",
     "nombre_extendido": "Otura",
-    "latitud": 43.2570988,
-    "longitud": -5.882636,
+    "latitud": 43.2569761,
+    "longitud": -5.8814950,
     "orientacion": "S",
     "enlace_8a": "",
     "descripcion": "",
@@ -117,8 +117,8 @@
   {
     "nombre": "LaCanal",
     "nombre_extendido": "La Canal",
-    "latitud": 43.2584211,
-    "longitud": -5.88099,
+    "latitud": 43.2584183, 
+    "longitud": -5.8795774,
     "orientacion": "S",
     "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/otura/routes?sector=la-canal",
     "descripcion": "",
@@ -127,9 +127,9 @@
   {
     "nombre": "Covariella",
     "nombre_extendido": "Covariella",
-    "latitud": 43.2564004,
-    "longitud": -5.900448,
-    "orientacion": "S",
+    "latitud": 43.2563495,
+    "longitud": -5.8994981,
+    "orientacion": "SW",
     "enlace_8a": "",
     "descripcion": "",
     "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWLQF99bVMZbo4NlMRAe4jz4mbJwyR0ZMBdd-S5eYoctU_ynFlzT9R6n0w2Nr7SP6Van-NpbU5BwpssmIjieTxj10wEw-CKsTTEJcDK_cwwl6vmtal2QCJ0VPblRc8uER2DWdViM5mxXLjRtwB9t37yF15MK3tLwvJDUokul2_K3eCHq6zEEReP12s/s1080/Monsacro.jpg"]
