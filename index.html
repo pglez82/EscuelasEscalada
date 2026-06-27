@@ -21,18 +21,17 @@
     </div>
     <div class="filter-bar" id="filter-bar">
       <button id="filter-toggle" class="filter-toggle" title="Ocultar filtro">▼</button>
-      <label for="orientation-filter">Orientación:</label>
-      <select id="orientation-filter">
-        <option value="">Todas</option>
-        <option value="N">N</option>
-        <option value="NE">NE</option>
-        <option value="E">E</option>
-        <option value="SE">SE</option>
-        <option value="S">S</option>
-        <option value="SW">SW</option>
-        <option value="W">W</option>
-        <option value="NW">NW</option>
-      </select>
+      <span class="filter-label">Orientación:</span>
+      <div class="orientation-checks" id="orientation-filters">
+        <label><input type="checkbox" value="N"> N</label>
+        <label><input type="checkbox" value="NE"> NE</label>
+        <label><input type="checkbox" value="E"> E</label>
+        <label><input type="checkbox" value="SE"> SE</label>
+        <label><input type="checkbox" value="S"> S</label>
+        <label><input type="checkbox" value="SW"> SW</label>
+        <label><input type="checkbox" value="W"> W</label>
+        <label><input type="checkbox" value="NW"> NW</label>
+      </div>
     </div>
     <div id="school-list" class="school-list">
       <div class="loading">Cargando...</div>
@@ -51,6 +50,6 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="js/app.js?v=6"></script>
+  <script src="js/app.js?v=7"></script>
 </body>
 </html>

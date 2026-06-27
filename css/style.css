@@ -109,7 +109,7 @@ body {
   border-bottom: 1px solid #e9ecef;
   flex-shrink: 0;
   transition: max-height 0.25s ease, opacity 0.2s ease, padding 0.25s ease, margin 0.25s ease;
-  max-height: 80px;
+  max-height: 160px;
   opacity: 1;
   overflow: hidden;
 }
@@ -146,29 +146,41 @@ body {
   display: none;
 }
 
-.filter-bar label {
+.filter-bar .filter-label {
   font-size: 0.9rem;
   font-weight: 500;
   color: #555;
   white-space: nowrap;
 }
 
-.filter-bar select {
-  flex: 1;
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  background: #fff;
-  color: #333;
-  cursor: pointer;
-  outline: none;
-  transition: border-color 0.2s;
+.orientation-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  align-items: center;
 }
 
-.filter-bar select:hover,
-.filter-bar select:focus {
-  border-color: #2c3e50;
+.orientation-checks label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: #555;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+  user-select: none;
+}
+
+.orientation-checks label:hover {
+  background: #e9ecef;
+  color: #2c3e50;
+}
+
+.orientation-checks input[type="checkbox"] {
+  accent-color: #2c3e50;
+  cursor: pointer;
 }
 
 .school-list {

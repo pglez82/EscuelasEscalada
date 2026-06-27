@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     await loadSchools();
+    filteredSchools = schools; // Show all schools on initial load
     renderSidebar();
     renderMap();
 
@@ -59,17 +60,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
     }
 
-    // Orientation filter
-    const filterSelect = document.getElementById('orientation-filter');
-    if (filterSelect) {
-      filterSelect.addEventListener('change', () => {
-        const value = filterSelect.value;
-        filteredSchools = value
-          ? schools.filter(s => s.orientacion === value)
+    // Orientation filter (multi-select)
+    const orientationChecks = document.getElementById('orientation-filters');
+    if (orientationChecks) {
+      function applyOrientationFilter() {
+        const checked = Array.from(orientationChecks.querySelectorAll('input[type="checkbox"]:checked'))
+          .map(cb => cb.value);
+        filteredSchools = checked.length > 0
+          ? schools.filter(s => checked.includes(s.orientacion))
           : schools;
         renderSidebar();
         updateMarkers();
-      });
+      }
+      orientationChecks.addEventListener('change', applyOrientationFilter);
     }
   } catch (err) {
     showError(err.message);
