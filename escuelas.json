@@ -123,8 +123,15 @@
     "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/otura/routes?sector=la-canal",
     "descripcion": "",
     "croquis": ["image.png"]
+  },
+  {
+    "nombre": "Covariella",
+    "nombre_extendido": "Covariella",
+    "latitud": 43.2564004,
+    "longitud": -5.900448,
+    "orientacion": "S",
+    "enlace_8a": "",
+    "descripcion": "",
+    "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWLQF99bVMZbo4NlMRAe4jz4mbJwyR0ZMBdd-S5eYoctU_ynFlzT9R6n0w2Nr7SP6Van-NpbU5BwpssmIjieTxj10wEw-CKsTTEJcDK_cwwl6vmtal2QCJ0VPblRc8uER2DWdViM5mxXLjRtwB9t37yF15MK3tLwvJDUokul2_K3eCHq6zEEReP12s/s1080/Monsacro.jpg"]
   }
-
-  
-  
 ]
