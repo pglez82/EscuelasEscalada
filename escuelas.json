@@ -143,5 +143,25 @@
     "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin-monsacro/routes?sector=entrepicos-alimoches",
     "descripcion": "Sector pequeño con alguna via de desplome bonita. Está como en una cueva así que no es S puro.",
     "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtpBg5mld-X0MxDDdhe00ZKjnt-1aa3HmfojsNRjRu3RXJOaMsQu7Cx-QMlKu0qtdrik-RBNN1EzT7DNEmKWar-uZLc3SEigF7FZ_8zOqA5yUCWX_g-Wfd1Wis4ug-9y-4ShnhInZpH9OxwmYaruEQp6mPoFaZGLZmT9C2GMb9GLSqXQuerujXogGY/s1704/350106456_505376188384009_9204083627581103841_n.jpg"]
+  },
+  {
+    "nombre": "AviruCampon",
+    "nombre_extendido": "Aviru Campón",
+    "latitud": 43.25778,
+    "longitud": -5.897733,
+    "orientacion": "S",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin-monsacro/routes?sector=avirul-campon",
+    "descripcion": "15 minutos aproximación.",
+    "croquis": ["image.png"]
+  },
+  {
+    "nombre": "Porriman",
+    "nombre_extendido": "Porrimán Inferior",
+    "latitud": 43.273280, 
+    "longitud": -5.863276,
+    "orientacion": "N",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/cueva-cabrera/routes?sector=porriman-inferior",
+    "descripcion": "15 minutos aproximación por la senda aparcando en el cementerio.",
+    "croquis": ["https://fempa.net/wp-content/uploads/2025/02/pro-RczlR698.jpg"]
   }
 ]
