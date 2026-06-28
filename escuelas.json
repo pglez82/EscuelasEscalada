@@ -163,5 +163,15 @@
     "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/cueva-cabrera/routes?sector=porriman-inferior",
     "descripcion": "15 minutos aproximación por la senda aparcando en el cementerio.",
     "croquis": ["https://fempa.net/wp-content/uploads/2025/02/pro-RczlR698.jpg"]
+  },
+  {
+    "nombre": "Ramilleru",
+    "nombre_extendido": "El Ramilleru",
+    "latitud": 43.2503597, 
+    "longitud": -5.8586484,
+    "orientacion": "S",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin/routes?sector=el-ramillero",
+    "descripcion": "Aproximación desde la foz, 15 minutos.",
+    "croquis": ["https://image.thecrag.com/1600x907/ab/69/ab69cd5cebadceada029b33fde1453f9cdb0e51a"]
   }
 ]
