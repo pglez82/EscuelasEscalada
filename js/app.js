@@ -215,6 +215,9 @@ function openDetail(index) {
 
   html += `</div>`;
 
+  // Bottom close button (fallback when top-right X is hidden by map controls)
+  html += `<button class="detail-close-bottom" onclick="closeDetail()" title="Cerrar">✕ Cerrar</button>`;
+
   detailPanel.innerHTML = html;
   detailPanel.classList.add('open');
 

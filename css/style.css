@@ -462,3 +462,28 @@ body {
   font-size: 0.85rem;
   color: #555;
 }
+
+/* Bottom close button (fallback for small devices) */
+.detail-close-bottom {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 16px auto 20px;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.detail-close-bottom:hover {
+  background: #34495e;
+}
+
+.detail-close-bottom:active {
+  background: #1a252f;
+}
