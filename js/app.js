@@ -342,8 +342,8 @@ function sunHoursPieHTML(orientacion, sunInfo) {
   let html = `
     <div class="sun-hours-section">
       <h3>☀️ Horas de sol</h3>
-      <div class="sun-bar-container">
-        <canvas id="sun-bar-canvas" width="280" height="80"></canvas>
+      <div class="sun-bar-container" id="sun-bar-wrapper">
+        <canvas id="sun-bar-canvas"></canvas>
       </div>
       <div class="sun-time-range" id="sun-time-range"></div>
     </div>`;
@@ -356,8 +356,23 @@ function drawSunBar(orientacion, sunInfo) {
   const canvas = document.getElementById('sun-bar-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  const W = canvas.width;
-  const H = canvas.height;
+
+  // Responsive sizing: fit the container, max 280px
+  const wrapper = document.getElementById('sun-bar-wrapper');
+  const containerWidth = wrapper ? wrapper.clientWidth : 280;
+  const W = Math.min(Math.max(containerWidth, 200), 320); // clamp between 200 and 320
+  const H = 80;
+
+  // Set internal resolution (supports HiDPI / Retina)
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.scale(dpr, dpr);
+
+  // Scale font sizes proportionally so they don't look tiny on larger canvases
+  const fontScale = Math.max(0.85, Math.min(1.15, W / 280));
 
   const inicio = sunInfo.inicio;
   const fin = sunInfo.fin;
@@ -373,13 +388,23 @@ function drawSunBar(orientacion, sunInfo) {
     return barLeft + ((h - SUN_START) / (SUN_END - SUN_START)) * barWidth;
   }
 
+  // Draw a rounded rectangle (polyfill for Safari < 16.4)
+  function roundRect(x, y, w, h, r) {
+    r = Math.min(r, w / 2, h / 2);
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+
   // Background bar (9h-21h range)
   ctx.fillStyle = '#f0f0f0';
   ctx.strokeStyle = '#ddd';
   ctx.lineWidth = 1;
-  const bgR = 4;
-  ctx.beginPath();
-  ctx.roundRect(barLeft, barTop, barWidth, barHeight, bgR);
+  roundRect(barLeft, barTop, barWidth, barHeight, 4);
   ctx.fill();
   ctx.stroke();
 
@@ -394,14 +419,13 @@ function drawSunBar(orientacion, sunInfo) {
       sunGrad.addColorStop(0, '#f4a623');
       sunGrad.addColorStop(1, '#f7c948');
       ctx.fillStyle = sunGrad;
-      ctx.beginPath();
-      ctx.roundRect(hourToX(clampedInicio), barTop, hourToX(clampedFin) - hourToX(clampedInicio), barHeight, bgR);
+      roundRect(hourToX(clampedInicio), barTop, hourToX(clampedFin) - hourToX(clampedInicio), barHeight, 4);
       ctx.fill();
     }
   }
 
   // Hour tick marks and labels (every 2 hours: 9, 11, 13, 15, 17, 19, 21)
-  ctx.font = '10px -apple-system, sans-serif';
+  ctx.font = `${10 * fontScale}px -apple-system, sans-serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'top';
 
@@ -429,7 +453,7 @@ function drawSunBar(orientacion, sunInfo) {
     // Start marker
     if (clampedInicio <= SUN_END) {
       const startX = hourToX(clampedInicio);
-      ctx.font = 'bold 9px -apple-system, sans-serif';
+      ctx.font = `bold ${9 * fontScale}px -apple-system, sans-serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'bottom';
       ctx.fillStyle = '#f4a623';
@@ -440,7 +464,7 @@ function drawSunBar(orientacion, sunInfo) {
     // End marker
     if (clampedFin >= SUN_START) {
       const endX = hourToX(clampedFin);
-      ctx.font = 'bold 9px -apple-system, sans-serif';
+      ctx.font = `bold ${9 * fontScale}px -apple-system, sans-serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'bottom';
       ctx.fillStyle = '#f4a623';
