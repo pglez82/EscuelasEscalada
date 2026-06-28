@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         filterToggle.textContent = isHidden ? '▲' : '▼';
         filterToggle.title = isHidden ? 'Mostrar filtro' : 'Ocultar filtro';
       });
-      // Set initial state (bar starts hidden)
-      filterToggle.textContent = '▲';
-      filterToggle.title = 'Mostrar filtro';
+      // Set initial state (bar starts visible)
+      filterToggle.textContent = '▼';
+      filterToggle.title = 'Ocultar filtro';
     }
 
     // Orientation filter (multi-select)
