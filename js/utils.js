@@ -15,14 +15,14 @@
 // --- Mapa base: horario de referencia por orientación ---
 // Cada valor es un rango [inicio, fin] en hora decimal
 const horasSolBase = {
-  N:  { inicio: null, fin: null },   // NUNCA da sol directo
-  NE: { inicio: 10,   fin: 14  },   // 4h de mañana
-  E:  { inicio: 9,    fin: 14  },   // 5h
-  SE: { inicio: 8,    fin: 15  },   // 7h
-  S:  { inicio: 10,   fin: 18  },   // 8h (todo el día)
-  SW: { inicio: 13,   fin: 17  },   // 4h de tarde
-  W:  { inicio: 14,   fin: 17  },   // 3h de tarde (sol poniente)
-  NW: { inicio: null, fin: null },   // NUNCA da sol directo
+  N:  { inicio: null, fin: null },
+  NE: { inicio: 9,   fin: 13  },  
+  E:  { inicio: 9,    fin: 14  }, 
+  SE: { inicio: 9,    fin: 16  }, 
+  S:  { inicio: 10,   fin: 19  }, 
+  SW: { inicio: 13,   fin: 19  },
+  W:  { inicio: 14,   fin: 19  }, 
+  NW: { inicio: 15, fin: 19 },   
 };
 
 // --- Factor direccional para el desplazamiento estacional ---

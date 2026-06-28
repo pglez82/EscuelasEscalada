@@ -432,7 +432,7 @@ body {
   color: #e74c3c;
 }
 
-/* Sun hours pie */
+/* Sun hours horizontal bar */
 .sun-hours-section {
   margin-top: 16px;
   padding-top: 12px;
@@ -446,19 +446,19 @@ body {
   margin-bottom: 10px;
 }
 
-.sun-pie-container {
+.sun-bar-container {
   display: inline-block;
   margin: 0 auto;
 }
 
-#sun-pie-canvas {
+#sun-bar-canvas {
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 280px;
+  height: 80px;
 }
 
 .sun-time-range {
-  margin-top: 8px;
-  font-size: 0.9rem;
+  margin-top: 4px;
+  font-size: 0.85rem;
   color: #555;
 }
