@@ -446,18 +446,4 @@ function drawSunBar(orientacion, sunInfo) {
       ctx.fillText(endLabel, endX, barTop - 2);
     }
   }
-
-  // // Current month info below hour labels
-  // const info = document.getElementById('sun-time-range');
-  // if (info) {
-  //   const currentMonth = new Date().getMonth() + 1;
-  //   const r = horasSol(currentMonth, orientacion);
-  //   if (r.horas == null) {
-  //     const startStr = `${Math.round(r.inicio).toString().padStart(2, '0')}:00`;
-  //     const endStr = `${Math.round(r.fin).toString().padStart(2, '0')}:00`;
-  //     info.textContent = `${startStr} – ${endStr} (${r.horas.toFixed(1)} h)`;
-  //   } else {
-  //     info.textContent = 'Sin sol directo';
-  //   }
-  // }
 }
