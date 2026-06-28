@@ -300,7 +300,6 @@ function loadCroquis(school, basePath) {
     const img = document.createElement('img');
     img.src = finalUrl;
     img.alt = 'Croquis';
-    img.loading = 'lazy';
     img.style.display = 'none';
     img.addEventListener('click', () => openLightbox(finalUrl));
 
