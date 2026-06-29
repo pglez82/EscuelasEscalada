@@ -173,5 +173,38 @@
     "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin/routes?sector=el-ramillero",
     "descripcion": "Aproximación desde la foz, 15 minutos.",
     "croquis": ["https://image.thecrag.com/1600x907/ab/69/ab69cd5cebadceada029b33fde1453f9cdb0e51a"]
+  },
+  {
+    "nombre": "Figares",
+    "nombre_extendido": "Figares",
+    "latitud": 43.2769922, 
+    "longitud": -5.8648547,
+    "orientacion": "SE",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/figares/routes",
+    "descripcion": "Prohibido del 15 de diciembre al 31 de agosto",
+    "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIWvS9xUW1OII4S83X1lazrClq_os9dRm-0qyERDQ0DqoA8Lzx7RStoTB7LSNPsw1ATLmJg2RvdhyphenhyphenAEhEf43gXGHjGQiuNbOsakJHaqMMCH9utypvJN8JyaoDcvywzISVCj3K9P9A8P5gLz6_VvlP3Ib-OWQKZu4nseGh7mnCkPjqOIywWdoWHFOP49ns/s3285/Asturvertical.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgakij36ycFP89PbJ_uUThaNIQSZgadn6W0j_7S6JoHiNgGu6wP_iI1fsUXK5S2ufJHaQ5Xwp9Wo4zBNzQjbZZJQP3hISSL2bAC8XqHgQGzZ2q9hV51cn7G6TLuRXcGtaq8Xry0f8ik7OQid5ujBw4-A-as6mOiJQuNEkL4E50WkuV9sOnHZxz17pqnmuM/s1298/Figares%20Sector%20Pingui.jpg","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhflvvMufSY8XoI7yNK-IXLan_P0zD785jYB2b4fnLJxUYPeK5j2FFi55Z59HRBC7zVhSPBzDNTdxSZOf1Nclh-tbJioQSIXJyvPKDTSbLb9mcDjb3OHSkpCAnvVa-ooXZBwcq-CAqeP0pT8yrwQv3ZVSsuZnPS47KNz2FZ7L13plAf0lOOWUCni4Z02zc/s1600/.facebook_1526273682408.jpg"]
+  },
+  {
+    "nombre": "CantuLaSierra",
+    "nombre_extendido": "Cantu La Sierra",
+    "latitud": 43.2589757, 
+    "longitud": -5.8749801,
+    "orientacion": "N",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/otura/routes?sector=cantu-la-sierra",
+    "descripcion": "Desde otura hacia la antena (20min).",
+    "croquis": ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_6RtBX1V7u9sco35mA7mMhdyClLT6rSmXBFBowxtsS_IlTlK_g-wYIlZDsC-on89InIcW9xGQF8yE0jhEI_SeOeIGDeC7VX74KfL-ylD8161n8rsrlGkOGbPENea_z4Pnb1LyuvSmFv4k44OVBui6d8ECkBang4TipdZW8boWsHtsRP7D49GiL8Wrc3Me/s1355/Cantu%20La%20Sierra.jpg"] 
+  },
+  {
+    "nombre": "Arnea",
+    "nombre_extendido": "Arnea",
+    "latitud": 43.3094543, 
+    "longitud": -5.8346322,
+    "orientacion": "S",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/arnea/routes",
+    "descripcion": "Sin comentarios!",
+    "croquis": ["http://rocaverdeclimbing.com/wp-content/uploads/2019/01/Manzaneda-Arnea-reequiped-one-new-route..jpg"]
+    
   }
+
+
 ]
