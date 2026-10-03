@@ -65,11 +65,9 @@
     "latitud": 43.2503819,
     "longitud": -5.8594081,
     "orientacion": "SW",
-    "enlace_8a": "",
-    "descripcion": "",
-    "croquis": [""
-      
-    ]
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin/routes?sector=el-argayo",
+    "descripcion": "Vías de desplome. Desde la foz unos 20 minutos.",
+    "croquis": ["image.png"]
   },
   {
     "nombre": "Utiru",
