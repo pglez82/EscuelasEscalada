@@ -149,8 +149,18 @@
     "longitud": -5.897733,
     "orientacion": "S",
     "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin-monsacro/routes?sector=avirul-campon",
-    "descripcion": "15 minutos aproximación.",
+    "descripcion": "15 a 20 minutos aproximación.",
     "croquis": ["image.png"]
+  },
+  {
+    "nombre": "AgujaMagdalena",
+    "nombre_extendido": "Aguja de la Magdalena",
+    "latitud": 43.258312,
+    "longitud":  -5.896971,
+    "orientacion": "S",
+    "enlace_8a": "https://www.8a.nu/crags/sportclimbing/spain/morcin-monsacro/routes?sector=aguja-magdalena",
+    "descripcion": "20 minutos de aproximación. Un poco menos protegido del viento que el aviru.",
+    "croquis": ["https://scontent.fbio3-1.fna.fbcdn.net/v/t39.30808-6/497452939_3095091583978961_8518702837755220865_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=jWVp2gztwjIQ7kNvwF5_izl&_nc_oc=Adr2FgK-Y6JRNIivPMGdLhHhZwp9aC93o0Cz6xspmPbNH4xZH9Q20JoWjZzo1qMgWXE&_nc_zt=23&_nc_ht=scontent.fbio3-1.fna&_nc_gid=AQXYzO72JkvqxbC54QR5sA&_nc_ss=7b2a8&oh=00_AQMved1MThvQcJ6HtGqn5-HaFnZq3tTttLkb_SLBjyX0sw&oe=6AD500FC"]
   },
   {
     "nombre": "Porriman",
